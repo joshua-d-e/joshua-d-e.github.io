@@ -75,3 +75,12 @@ body {
 .contact a:hover {
   text-decoration: underline;
 }
+
+ul {
+  list-style-type: disc; /* Adds the standard bullet points */
+  padding-left: 20px; /* Adds some space to the left for the bullet points */
+}
+
+li {
+  margin-bottom: 10px; /* Adds some space between list items */
+}
