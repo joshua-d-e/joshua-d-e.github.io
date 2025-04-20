@@ -1,86 +1,116 @@
-/* Basic Reset */
-* {
+/* general body style type stuff */
+body {
+  font-family: Arial, sans-serif; /* hmm what kind of font tho */
+  background-color: #f4f4f9; /* professional color for the site */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Page Setup */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+/* container 4 content */
+.container {
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
 }
 
-/* Container */
-.container {
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
+/* styling for header */
+.header {
+  text-align: center; /* centers the content */
+  margin-bottom: 20px; /* adds space below the header */
 }
 
-/* Header Image */
-.monk-img {
-  width: 100px;
-  margin-bottom: 20px;
+.header h1 {
+  font-size: 2.5em; /* adjust the font size of title*/
+  margin: 0; /* removes any margin around the header, dawg */
 }
 
-/* Intro Text */
+.header h2 {
+  font-size: 1.5em; /* adjusts the font size of the subtitle */
+  font-style: italic; /* optional: Make the subtitle italic */
+  color: gray; /* optional: change the color of the subtitle */
+  margin-top: 5px; /* adds a little space between the name and the subtitle */
+}
+
+/* styling for the centered image - if you want tho */
+img {
+  display: block; /* makes sure the image behaves as a block element */
+  margin: 20px auto; /* centers the image and adds some margin on top and bottom */
+  width: 200px; /* adjust the image size */
+  border-radius: 10px; /* optional: adds rounded corners to the image */
+}
+
+/* general styling for the introduction paragraphs */
 .intro {
-  margin-bottom: 20px;
-  text-align: left;
+  font-size: 1.2em; /* slightly larger text for readability */
+  line-height: 1.6; /* adds some space between lines of text */
+  margin-bottom: 20px; /* adds space below the intro text */
 }
 
-/* Link Grid */
+/* link grid layout */
 .link-grid {
-  display: flex;
-  justify-content: space-around;
-  text-align: left;
-  margin: 30px 0;
+  display: flex; /* use flexbox to layout links side by side */
+  justify-content: space-between; /* spaces out the two columns */
+  margin-bottom: 20px; /* adds space below the link grid */
 }
 
+/* styling for the links */
 .link-grid h3 {
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 .link-grid ul {
-  list-style: none;
+  list-style: none; /* removes default bullet points */
+  padding: 0;
 }
 
-.link-grid a {
-  text-decoration: none;
-  color: #0077cc;
+.link-grid ul li {
+  margin-bottom: 5px; /* adds space between list items */
 }
 
-.link-grid a:hover {
-  text-decoration: underline;
+.link-grid ul li a {
+  text-decoration: none; /* removes underlines from links */
+  color: #007BFF; /* link color */
+  font-weight: bold;
 }
 
-/* Contact Section */
+.link-grid ul li a:hover {
+  text-decoration: underline; /* adds underline on hover */
+}
+
+/* styling for the contact section */
 .contact {
-  margin-top: 40px;
+  text-align: center; /* centers the contact info */
+  margin-top: 40px; /* adds space above the contact section */
+}
+
+.contact h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px; /* adds space below the heading */
+}
+
+.contact p {
+  font-size: 1.2em; /* makes the contact text slightly larger */
 }
 
 .contact a {
-  color: #0077cc;
   text-decoration: none;
+  color: #007BFF; /* link color */
+  font-weight: bold;
 }
 
 .contact a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* adds underline on hover */
 }
 
+/*bullet points */
+
 ul {
-  list-style-type: disc; /* Adds the standard bullet points */
-  padding-left: 20px; /* Adds some space to the left for the bullet points */
+  list-style-type: disc; /* adds the standard bullet points */
+  padding-left: 20px; /* adds some space to the left for the bullet points */
 }
 
 li {
-  margin-bottom: 10px; /* Adds some space between list items */
+  margin-bottom: 10px; /* adds some space between list items */
 }
