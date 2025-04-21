@@ -114,3 +114,29 @@ ul {
 li {
   margin-bottom: 10px; /* adds some space between list items */
 }
+
+/* Table Styles */
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.book-table th, .book-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.book-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.book-table caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+  text-align: left;
+}
