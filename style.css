@@ -21,21 +21,21 @@ body {
 }
 
 .header h1 {
-  font-size: 2.5em; /* adjust the font size of title*/
+  font-size: 2.0em; /* adjust the font size of title*/
   margin: 0; /* removes any margin around the header, dawg */
 }
 
 .header h2 {
-  font-size: 1.5em; /* adjusts the font size of the subtitle */
+  font-size: 1.0em; /* adjusts the font size of the subtitle */
   font-style: italic; /* optional: Make the subtitle italic */
   color: gray; /* optional: change the color of the subtitle */
-  margin-top: 5px; /* adds a little space between the name and the subtitle */
+  margin-top: 10px; /* adds a little space between the name and the subtitle */
 }
 
 /* styling for the centered image - if you want tho */
 img {
   display: block; /* makes sure the image behaves as a block element */
-  margin: 20px auto; /* centers the image and adds some margin on top and bottom */
+  margin: 30px auto; /* centers the image and adds some margin on top and bottom */
   width: 200px; /* adjust the image size */
   border-radius: 10px; /* optional: adds rounded corners to the image */
 }
