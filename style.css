@@ -60,10 +60,10 @@ img {
   margin-bottom: 10px;
 }
 
-.link-grid ul {
-  list-style: none; /* removes default bullet points */
+/* .link-grid ul {
+  list-style: none; /* removes default bullet points 
   padding: 0;
-}
+}*/
 
 .link-grid ul li {
   margin-bottom: 5px; /* adds space between list items */
