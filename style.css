@@ -21,12 +21,12 @@ body {
 }
 
 .header h1 {
-  font-size: 2.0em; /* adjust the font size of title*/
+  font-size: 1.5em; /* adjust the font size of title*/
   margin: 0; /* removes any margin around the header, dawg */
 }
 
 .header h2 {
-  font-size: 1.0em; /* adjusts the font size of the subtitle */
+  font-size: 0.75em; /* adjusts the font size of the subtitle */
   font-style: italic; /* optional: Make the subtitle italic */
   color: gray; /* optional: change the color of the subtitle */
   margin-top: 10px; /* adds a little space between the name and the subtitle */
