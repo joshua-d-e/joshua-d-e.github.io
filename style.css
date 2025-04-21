@@ -140,15 +140,3 @@ li {
   padding: 1rem 0;
   text-align: left;
 }
-/* book image formatting */
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-
-.header-container img {
-  max-width: 140px; /* Adjust size */
-  height: auto;
-}
