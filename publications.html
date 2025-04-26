@@ -19,10 +19,12 @@
 
     h2 {
       margin-bottom: 1rem;
+      text-align: center; /* Center the table title */
     }
 
     p {
       margin-bottom: 2rem;
+      text-align: center; /* Center the intro paragraph */
     }
 
     table {
@@ -56,6 +58,27 @@
     .nav a:hover {
       text-decoration: underline;
     }
+
+    /* Clean image styling */
+    .publication-image {
+      display: block;
+      margin: 0 auto;
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Caption styling */
+    .image-caption {
+      text-align: center;
+      font-size: 0.8rem;
+      color: grey;
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -64,23 +87,25 @@
   </div>
 
   <h1>Publications</h1>
- <img
-          src="chem_image.jpg"
-          alt="chemistry"
-          class="h-16 w-auto ml-4 rounded shadow"
-        />
+
+  <!-- Image and subtitle -->
+  <img
+    src="harris_neuron_image.jpg"
+    alt="neurons"
+    class="publication-image"
+  />
+  <div class="image-caption">subtitle</div>
+
   <p>Here are my most recent publications. For an up-to-date, full list, please see my CV.</p>
 
   <h2>Publications</h2>
+
   <table>
     <tr>
-      <td>Gunasekaran S, Moffat JJ, <b>Epstein JD</b>, Phamluong K, Ehinger Y, Ron D. BDNF in Ventrolateral Orbitofrontal Cortex to
-Dorsolateral Striatum Circuit Moderates Alcohol Consumption and Gates Alcohol Habit.<em>bioRxiv</em>. Preprint published
-online January 13, 2025. doi:10.1101/2025.01.09.632255</td>
+      <td>Gunasekaran S, Moffat JJ, <b>Epstein JD</b>, Phamluong K, Ehinger Y, Ron D. BDNF in Ventrolateral Orbitofrontal Cortex to Dorsolateral Striatum Circuit Moderates Alcohol Consumption and Gates Alcohol Habit. <em>bioRxiv</em>. Preprint published online January 13, 2025. doi:10.1101/2025.01.09.632255</td>
     </tr>
     <tr>
-      <td>Kornfeld H, <b>Epstein J</b>. Treating Chronic Pain in 2024 - Let’s Focus on Buprenorphine. Heilig S, ed.<em>San Francisco Marin
-Medicine</em>. 2024;97(2):12-13. https://issuu.com/sfmedsociety/docs/1sfmm-apr-may-june-2024/14</td>
+      <td>Kornfeld H, <b>Epstein J</b>. Treating Chronic Pain in 2024 - Let’s Focus on Buprenorphine. Heilig S, ed. <em>San Francisco Marin Medicine</em>. 2024;97(2):12-13. https://issuu.com/sfmedsociety/docs/1sfmm-apr-may-june-2024/14</td>
     </tr>
   </table>
 </body>
