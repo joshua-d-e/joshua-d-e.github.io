@@ -7,17 +7,21 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,700&display=swap" rel="stylesheet">
   <style>
+    /* applying fraunces */
     body {
       font-family: 'Fraunces', serif;
       margin: 0;
       padding: 0;
+      color: #000;
     }
 
+    /* nav button styling (home link in top-left with padding) */
     .nav {
-      padding: 1rem;
+      margin: 1rem;
     }
 
     .nav a {
+      margin-right: 1.5rem;
       text-decoration: none;
       font-weight: bold;
       color: black;
@@ -27,52 +31,76 @@
       text-decoration: underline;
     }
 
-    .about-container {
+    /* container to hold the About Me title and the content side by side */
+    .about-wrapper {
       display: flex;
+      flex-direction: row;
       align-items: flex-start;
+      justify-content: center;
       padding: 2rem;
-      gap: 2rem;
+      gap: 2rem; /* space between image and text */
     }
 
+    /* column containing title and headshot */
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* centers headshot under the title */
+    }
+
+    /* title styling */
+    .about-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem; /* adds margin between title and headshot */
+      text-align: center;
+    }
+
+    /* headshot image styling */
     .headshot {
       width: 200px;
       height: auto;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
+    /* text content styling */
     .about-text {
       max-width: 600px;
+      text-align: left;
     }
 
-    h1 {
-      margin-top: 0;
-      margin-bottom: 1rem;
-    }
-
+    /* can do without this but makes styling more responsive */
     @media (max-width: 768px) {
-      .about-container {
+      .about-wrapper {
         flex-direction: column;
         align-items: center;
         text-align: center;
       }
 
       .about-text {
-        max-width: 100%;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
 
+  <!-- nav link to return home -->
   <div class="nav">
     <a href="index.html">Home</a>
   </div>
 
-  <div class="about-container">
-    <img src="headshot.jpg" alt="Headshot" class="headshot" />
-    
+  <!-- wrapper for title, headshot, and about text -->
+  <div class="about-wrapper">
+
+    <!-- left column: About Me title + headshot image -->
+    <div class="left-column">
+      <h1 class="about-title">About Me</h1>
+      <img src="headshot.jpg" alt="Headshot" class="headshot" />
+    </div>
+
+    <!-- right column: paragraphs of text -->
     <div class="about-text">
-      <h1>About Me</h1>
       <p>
         under construction
       </p>
@@ -80,6 +108,7 @@
         ...
       </p>
     </div>
+
   </div>
 
 </body>
