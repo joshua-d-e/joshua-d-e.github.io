@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      gap: 40px;
+    }
+
+    .headshot {
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .about-text {
+      max-width: 600px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-container">
+    <img src="headshot.jpg" alt="Headshot" class="headshot" />
+    
+    <div class="about-text">
+      <p> Section under construction</p>
+
+      <p>...</p>
+    </div>
+  </div>
+
+</body>
+</html>
