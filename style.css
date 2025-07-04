@@ -152,3 +152,17 @@ li {
   margin-bottom: 2rem;
   line-height: 1.4;
 }
+
+/* ---------- footer disclaimer (UPDATED) ---------- */
+.footer {
+  margin: 4rem auto 2rem;   /* ↑ pushes footer slightly up from bottom, adds space below */
+  text-align: center;       /* centers line */
+  max-width: 800px;         /* keeps from stretching too wide */
+}
+
+.disclaimer {
+  font-size: 0.65rem; 
+  color: #666;
+  font-style: italic;
+  line-height: 1.4;
+}
